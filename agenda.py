@@ -107,7 +107,7 @@ def main():
         print("2 - Exibe contatos")
         print("3 - Pesquisa contato")
         print("4 - Deleta contato")
-        print("0 - Sair						       GreenHub                  ")
+        print("0 - Sair					    GreenHub              ")
         print("-----------------------------------------------------\n")
         resposta = input("[+]Insira um valor: ")
         print('\n')
