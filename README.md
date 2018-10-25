@@ -2,6 +2,6 @@
 
 Requirements/Requesitos:
 
-- Python 3.6
+- Python
 
 Download Python: https://www.python.org/downloads/
