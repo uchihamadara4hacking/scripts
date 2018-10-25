@@ -1,4 +1,4 @@
-#/bin/bash~
+#!/bin/bash
 #programado por R4MSOLO
 #Meu canal do youtube link encurtado ---> goo.gl/w3HQr3
 
