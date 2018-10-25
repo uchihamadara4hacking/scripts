@@ -1,4 +1,3 @@
-#!/bin/bash
 '''
 Python 2.7
 Game Batalha Naval
