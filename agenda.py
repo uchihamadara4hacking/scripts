@@ -4,6 +4,9 @@ Python 3.6
 -
 by R4MSOLO
 '''
+import os
+import time
+
 def registrar():
     nome     = input("\nNome.....: ")
     email    = input("\nEmail....: ")
@@ -14,7 +17,9 @@ def registrar():
     texto = f'{nome} {email} {telefone} {endereco}\n'
     arq.writelines(texto)
     arq.close()
- 
+    print('[+]Contato registrado com sucesso!')
+    time.sleep(0.5)
+    os.system('clear')
     main()
  
 def lista_Contato(): #lista ordenando por nomes na exibição
@@ -38,8 +43,9 @@ def lista_Contato(): #lista ordenando por nomes na exibição
     for linha in contatos:
         print(linha)
  
-    resp = input('[-]Final da lista, tecle ENTER para continuar... ')
-    if resp == 'X' or 'x':
+    resp = input('[-]Final da lista, digite 0 para continuar... ')
+    if resp == 0:
+        os.system('clear')
         main()
  
 def pesquisar():
@@ -65,8 +71,9 @@ def pesquisar():
             pass
  
     f.close()
-    resp = input('[-]Final da lista, tecle ENTER para continuar... ')
-    if resp == 'X' or 'x':
+    resp = input('[-]Final da lista, digite 0 para continuar... ')
+    if resp == 0:
+        os.system('clear')
         main()
  
 def deletar():
@@ -98,6 +105,8 @@ def deletar():
     arq = open('agenda.txt', 'w')
     arq.writelines(contatos)
     arq.close()
+    time.sleep(0.5)
+    os.system('clear')
     main()
  
 def main():
